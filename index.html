@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Palíndromos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Botón de inicio de sesión con Google -->
+    <button id="login-btn">
+        <img src="google-icon.png" alt="Google"> Iniciar sesión con Google
+    </button>
+    <button id="logout-btn" style="display:none;">Cerrar sesión</button>
+
+    <!-- Información del usuario actual -->
+    <div id="user-info">
+        <div id="user-profile">
+            <img id="user-avatar" src="user-icon.png" alt="Avatar">
+            <span id="current-user">Usuario: -</span>
+        </div>
+        <button id="change-username-btn">✏️ Editar</button>
+    </div>
+    
+
+    <div class="container">
+        <h1>Juego de Palíndromos</h1>
+        <p id="game-description">Ingresa una palabra o frase para verificar si es un palíndromo y ganar puntos.</p>
+
+        <!-- Entrada de texto y botón de verificación -->
+        <input type="text" id="text-input" placeholder="Escribe aquí...">
+        <button id="check-btn">Verificar</button>
+
+        <!-- Resultado -->
+        <p id="result"></p>
+
+        <!-- Puntos totales -->
+        <div id="total-points">Puntos totales: 0</div>
+
+        <!-- Historial de palabras ingresadas -->
+        <div id="historial">
+            <h2>Historial de Puntajes</h2>
+        </div>
+    </div>
+
+    <!-- Tabla de récords -->
+    <div id="leaderboard">
+        <h2>Tabla de Puntajes Record</h2>
+    </div>
+
+    <!-- Modal para elegir nombre de usuario -->
+    <div id="username-modal" class="modal">
+        <div class="modal-content">
+            <h2>Elige un nombre de usuario</h2>
+            <input type="text" id="username-input" placeholder="Nombre de usuario">
+            <button id="save-username-btn">Guardar</button>
+        </div>
+    </div>
+
+    <!-- Importar Firebase y el script -->
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
