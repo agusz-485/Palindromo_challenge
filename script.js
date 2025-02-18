@@ -103,7 +103,7 @@ async function cargarDiccionario() {
         datosNombres.malename.forEach(nombre => diccionarioEspanol.add(normalizarPalabra(nombre)));
         
         // Agregar manualmente palabras faltantes
-let palabrasFaltantes = ["oso", "radar", "reconocer", "anita", "lava", "la", "tina", "somos", "oro", "salas","Neuquen", "solos", "se", "es"];
+let palabrasFaltantes = ["oso", "radar", "reconocer", "anita", "lava", "la", "tina", "somos", "oro", "salas","Neuquen", "solos", "se", "es", "zorra"];
         palabrasFaltantes.forEach(palabra => diccionarioEspanol.add(normalizarPalabra(palabra)));
         
         console.log("Diccionario cargado con", diccionarioEspanol.size, "entradas.");
